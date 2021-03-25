@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Detalle:</h1>
+        <ul>
+            <li><%= user.name %></li>
+            <li><%= user.lastName %></li>
+            <li><%= user.dni %> </li>
+
+            <form action="/users/delete/<%= user._id %>" method="POST">
+                <button type="submit">Borrar usuario</button>
+            </form>
+
+            <a href="/users/edit/<%= user._id %>">
+                <button>Editar aqui!</button>
+            </a>
+        </ul>
+    </body>
+</html>

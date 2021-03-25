@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Editar informacion de Usuario: <%= user.lastName %> </h1>
+
+        <form action="/users/edit/<%= user._id %>" method="POST">
+            
+            <label>Nombre:</label>
+            <input type="text" name="name" value="<%= user.name %>" ><br>
+            <label>Apellido:</label>
+            <input type="text" name="lastName" value="<%= user.lastName %>" ><br>
+            <label >Contraseña:</label>
+            <input type="password" name="password" value="<%= user.password %>" ><br>
+            <label>Dni:</label>
+            <input type="number" name="dni" value="<%= user.dni %>" ><br>
+ 
+            <div>
+                <button>Guardar</button>
+            </div>
+
+        </form>
+
+    </body>
+</html>

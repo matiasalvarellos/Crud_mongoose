@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>Listado de usuarios</h1>
+        <ul>
+            <% users.forEach(user =>{ %>
+                <a href="/users/detail/<%= user._id %>">
+                    <li>
+                        <%= user.name %>
+                    
+                    </li>
+                </a>
+            <% }) %> 
+        </ul>
+    </body>
+</html>
